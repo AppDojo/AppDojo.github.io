@@ -3,16 +3,17 @@
 <head>
   <meta charset="utf-8" />
 
-  <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width" />
 
-  <title>Welcome to Foundation | Homepage</title>
+  <title>Welcome to App Dojo | Homepage</title>
 
 
   <link rel="stylesheet" href="stylesheets/normalize.css">
   <link rel="stylesheet" href="stylesheets/foundation.min.css">
   <link rel="stylesheet" href="stylesheets/style.css">
+  <!--<link rel="stylesheet" href="stylesheets/animate-custom.css">-->
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
 
   <!-- Favicon -->
   <link href="images/favicon.ico" rel="icon" type="image/x-icon"/>
@@ -31,7 +32,7 @@
     <ul class="title-area">
       <li class="name">
         <h1>
-          <a href="index.html"><img class="logo" src="images/AppDojo_logo_web.png" /></a>
+          <a href="#"><img class="logo" src="images/AppDojo_logo_web.png" /></a>
         </h1>
       </li>
       <li class="toggle-topbar">
@@ -41,11 +42,10 @@
     </ul>
 
     <section class="top-bar-section">
-      <!-- Right Nav Section -->
       <ul class="right">
         <li class="divider"></li>
         <li class="has-dropdown">
-          <a href="resources.html">Resources</a>
+          <a href="#">Resources</a>
           <ul class="dropdown">
             <li><a href="#">Mobile Development</a></li>
             <li><a href="#">Web Development</a></li>
@@ -61,38 +61,28 @@
   </nav>
 <!-- End Header and Nav -->
 
-
-
 <!-- First Band (Slider) -->
 <!-- The Orbit slider is initialized at the bottom of the page by calling .orbit() on #slider -->
-<section id="billboard">
-
-
-
-  <div class="row">
-
-    <div class="one columns "></div>
-
-    <div class="six columns dojo">
-      <h2><img src="images/dojo_big.png" alt="dojo_big" width="367" height="343" /></h2>
+  <section id="billboard">
+    <div class="row">
+      <div class="six columns dojo">
+        <h2><img src="images/dojo_big.png" alt="dojo_big" width="367" height="343" /></h2>
+      </div>
+      <div class="six columns dojo-msg">
+        <h5>A place to bring ideas to life!</h5>
+      </div>
     </div>
-    <div class="five columns dojo-msg">
-      <h5>A place to bring ideas to life!</h5>
+  </section>
+
+
+  <!-- Message -->
+  <section id="message">
+    <div class="row">
+      <div class="twelve columns">
+        <h3 class='subheader'>Learn through development and contributions.</h3>
+      </div>
     </div>
-
-  </div>
-
-</section>
-
-
-<!-- Message -->
-<section id="message">
-  <div class="row">
-    <div class="twelve columns">
-      <h3>...and a place to learn through development and contributions.</h3>
-    </div>
-  </div>
-</section>
+  </section>
 
 
 <!-- Three-up Content Blocks -->
@@ -126,13 +116,14 @@
 <section id="team">
   <div class="row">
     <div class="twelve columns">
-      <h5>Meet the Team</h5>
+      <h4>Meet the Team</h4>
       <div id="contactPeopleTab">
         <ul class="block-grid four-up">
-          <li><a href="mailto:mal@serenity.bc.reb"><img src="images/ninja.png" /><br />Leo Correa</a></li>
-          <li><a href="mailto:zoe@serenity.bc.reb"><img src="images/ninja.png" /><br />Joshua Martinez</a></li>
-          <li><a href="mailto:jayne@serenity.bc.reb"><img src="images/ninja.png" /><br />Gregory Jean-Baptiste</a></li>
-          <li><a href="mailto:doc@serenity.bc.reb"><img src="images/ninja.png" /><br />Enok Madrid</a></li>
+          <li><a href="#"><img src="images/ninja.png" /><br />Leo Correa</a></li>
+          <li><a href="#"><img src="images/ninja.png" /><br />Joshua Martinez</a></li>
+          <li><a href="#"><img src="images/ninja.png" /><br />Gregory Jean-Baptiste</a></li>
+          <li><a href="#"><img src="images/ninja.png" /><br />Eduardo Dennis</a></li>
+          <li><a href="#"><img src="images/ninja.png" /><br />Enok Madrid</a></li>
         </ul>
       </div>
     </div>
@@ -197,7 +188,13 @@
 </section>
 
 <footer>
-  <p class="signature" style="text-align:center; margin: 8px;">AppDojo &copy; Copyright 2013 All Rights Reserved &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Design & Branding by: &nbsp;  <a href="http://enoklabs.com" target="_blank"><img src="images/enoklabs_sm.png" alt="enoklabs_sm" width="15" /> EnokLabs.com</a></p>
+  <p class="signature" style="text-align:center; margin: 5px;">
+    AppDojo &copy; Copyright 2013 All Rights Reserved &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Design & Branding by: &nbsp;
+    <a href="http://enoklabs.com" target="_blank">
+      <img src="images/enoklabs_sm.png" alt="enoklabs_sm" width="15" />
+      EnokLabs.com
+    </a>
+  </p>
 </footer>
 <!-- End Footer -->
 
@@ -207,23 +204,19 @@
 <!-- Initialize JS Plugins -->
 <!--<script src="javascripts/app.js"></script>-->
 
-<!--<script type="text/javascript">-->
-<!--$(window).load(function() {-->
-<!--$('#slider').orbit();-->
-<!--});-->
-<!--</script>-->
+    <script src="javascripts/app.js"></script>
 
-<script>
-  document.write('<script src=javascripts/vendor/'
-    + ('__proto__' in {} ? 'zepto' : 'jquery')
-    + '.js><\/script>');
-</script>
-<script src="javascripts/foundation.min.js"></script>
-<script src="javascripts/foundation/foundation.topbar.js"></script>
+    <script>
+      document.write('<script src=javascripts/vendor/'
+        + ('__proto__' in {} ? 'zepto' : 'jquery')
+        + '.js><\/script>');
+    </script>
+    <script src="javascripts/foundation.min.js"></script>
+    <script src="javascripts/foundation/foundation.topbar.js"></script>
 
-<script>
-  $(document).foundation();
-</script>
+    <script>
+      $(document).foundation();
+    </script>
 
-</body>
+  </body>
 </html>

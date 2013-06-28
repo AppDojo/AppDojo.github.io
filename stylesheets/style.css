@@ -51,7 +51,36 @@ li.toggle-topbar{
     height: 40px;
 }
 
+.header .name a:hover {
+    height: 40px;
+}
 
+ul.right>li:hover {
+    background: none;
+}
+
+.top-bar ul>li.has-dropdown:hover>.dropdown {
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: black;
+}
+
+.top-bar ul>li.has-dropdown:hover>.dropdown li:last-child {
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.top-bar ul>li.has-dropdown:hover>.dropdown li{
+    background-color: black;
+}
 /*************************************/
 /************ BILLBOARD **************/
 #billboard{
@@ -77,6 +106,7 @@ li.toggle-topbar{
 .dojo-msg h5{
 	color: white;
 	font-size: 3.8em;
+    font-family: 'Jura', sans-serif;
 }
 
 
@@ -138,6 +168,10 @@ li.toggle-topbar{
 	padding-top: 50px;
 }
 
+
+#team ul li {
+    text-align:center;
+}
 
 
 /*************************************/
