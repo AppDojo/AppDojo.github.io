@@ -1,79 +1,229 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>App Dojo by AppDojo</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<!DOCTYPE html>
 
-  </head>
-  <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/AppDojo">View On GitHub</a></li>
-        </nav>
-      </div><!-- end header -->
+<head>
+  <meta charset="utf-8" />
 
-    <div class="wrapper">
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
 
-      <section>
-        <div id="title">
-          <h1>App Dojo</h1>
-          <p>Florida International University</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/AppDojo">AppDojo</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+  <title>Welcome to Foundation | Homepage</title>
+
+
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+  <link rel="stylesheet" href="stylesheets/foundation.min.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+  <!-- Favicon -->
+  <link href="images/favicon.ico" rel="icon" type="image/x-icon"/>
+
+  <script src="javascripts/vendor/jquery.js"></script>
+  <script src="javascripts/vendor/custom.modernizr.js"></script>
+  <!--<script src="javascripts/vendor/zepto.js"></script>-->
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <nav class="top-bar header">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="index.html"><img class="logo" src="images/AppDojo_logo_web.png" /></a>
+        </h1>
+      </li>
+      <li class="toggle-topbar">
+        <a href="#">
+        </a>
+      </li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="divider"></li>
+        <li class="has-dropdown">
+          <a href="resources.html">Resources</a>
+          <ul class="dropdown">
+            <li><a href="#">Mobile Development</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Tools And Applications</a></li>
+          </ul>
+        </li>
+        <li class="divider"></li>
+        <li><a href="about.html">About</a></li>
+        <li class="divider"></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </section>
+  </nav>
+<!-- End Header and Nav -->
+
+
+
+<!-- First Band (Slider) -->
+<!-- The Orbit slider is initialized at the bottom of the page by calling .orbit() on #slider -->
+<section id="billboard">
+
+
+
+  <div class="row">
+
+    <div class="one columns "></div>
+
+    <div class="six columns dojo">
+      <h2><img src="images/dojo_big.png" alt="dojo_big" width="367" height="343" /></h2>
+    </div>
+    <div class="five columns dojo-msg">
+      <h5>A place to bring ideas to life!</h5>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- Message -->
+<section id="message">
+  <div class="row">
+    <div class="twelve columns">
+      <h3>...and a place to learn through development and contributions.</h3>
+    </div>
+  </div>
+</section>
+
+
+<!-- Three-up Content Blocks -->
+<section id="main">
+
+  <div class="row">
+    <div class="four columns">
+      <p><img src="images/temple.png" alt="temple" width="100" height="100" /></p>
+      <h4>Who are we?</h4>
+      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa.</p>
+    </div>
+    <div class="four columns">
+      <p><img src="images/star.png" alt="star" width="100" height="100" /></p>
+      <h4>Learn.</h4>
+      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa.</p>
+    </div>
+    <div class="four columns">
+
+      <p><img src="images/cont.png" alt="cont" width="100" height="100" /></p>
+      <h4>Contribute.</h4>
+      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa.</p>
+    </div>
+
+  </div>
+
+
+  <!-- Call to Action Panel -->
+</section>
+
+
+<section id="team">
+  <div class="row">
+    <div class="twelve columns">
+      <h5>Meet the Team</h5>
+      <div id="contactPeopleTab">
+        <ul class="block-grid four-up">
+          <li><a href="mailto:mal@serenity.bc.reb"><img src="images/ninja.png" /><br />Leo Correa</a></li>
+          <li><a href="mailto:zoe@serenity.bc.reb"><img src="images/ninja.png" /><br />Joshua Martinez</a></li>
+          <li><a href="mailto:jayne@serenity.bc.reb"><img src="images/ninja.png" /><br />Gregory Jean-Baptiste</a></li>
+          <li><a href="mailto:doc@serenity.bc.reb"><img src="images/ninja.png" /><br />Enok Madrid</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row get-in-touch">
+    <div class="twelve columns">
+
+      <div class="panel">
+        <h4>Get in touch!</h4>
+
+        <div class="row">
+          <div class="nine columns">
+            <p>We'd love to hear from you, you attractive person you.</p>
+          </div>
+          <div class="three columns">
+            <a href="#" class="radius button right">Contact Us</a>
+          </div>
         </div>
-
-        <h3>What we do</h3>
-
-<p>AppDojo is a place to bring ideas to life through development and contributions by every member.</p>
-
-<p><strong>TODO</strong></p>
-
-<h3>Resources</h3>
-
-<h4>Development</h4>
-
-<ul>
-<li><a href="http://codeschool.com">Code School</a></li>
-<li><a href="http://codeacademy.com">Code Academy</a></li>
-</ul><h3>Members</h3>
-
-<ul>
-  <li>Leo Correa</li> 
-  <li>Joshua Martinez</li>
-  <li>Gregory Jean-Baptiste</li>
-  <li>Eduardo Dennis</li>
-</ul>
-
-<h3>Organizers/Sponsors</h3>
-
-<p><strong>TODO</strong></p>
-      </section>
+      </div>
 
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-40049435-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+  </div>
 
-  </body>
+</section>
+
+
+
+<!-- Footer -->
+<section id="footer">
+  <div class="row">
+    <div class="three columns">
+      <h6>Site Map</h6>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="three columns">
+      <h6>Resources</h6>
+      <ul>
+        <li><a href="#">Web Development</a></li>
+        <li><a href="#">App Development</a></li>
+        <li><a href="#">Tools and Applications</a></li>
+        <li><a href="#">Downloads</a></li>
+      </ul>
+    </div>
+    <div class="three columns">
+      <h6>Feeds</h6>
+      <ul>
+        <li><a target="_blank" href="#"><i class="icon-twitter"></i>&nbsp;&nbsp; Follow</a></li>
+        <li><a target="_blank" href="#"><i class="icon-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp; Like us</a></li>
+        <li><a target="_blank" href="#"><i class="icon-github"></i>&nbsp;&nbsp;&nbsp; Github</a></li>
+      </ul>
+    </div>
+    <div class="three columns">
+      <img src="images/dojo_mini.png" alt="dojo_mini" width="92" height="86" />
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="signature" style="text-align:center; margin: 8px;">AppDojo &copy; Copyright 2013 All Rights Reserved &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Design & Branding by: &nbsp;  <a href="http://enoklabs.com" target="_blank"><img src="images/enoklabs_sm.png" alt="enoklabs_sm" width="15" /> EnokLabs.com</a></p>
+</footer>
+<!-- End Footer -->
+
+<!-- Included JS Files (Compressed) -->
+
+
+<!-- Initialize JS Plugins -->
+<!--<script src="javascripts/app.js"></script>-->
+
+<!--<script type="text/javascript">-->
+<!--$(window).load(function() {-->
+<!--$('#slider').orbit();-->
+<!--});-->
+<!--</script>-->
+
+<script>
+  document.write('<script src=javascripts/vendor/'
+    + ('__proto__' in {} ? 'zepto' : 'jquery')
+    + '.js><\/script>');
+</script>
+<script src="javascripts/foundation.min.js"></script>
+<script src="javascripts/foundation/foundation.topbar.js"></script>
+
+<script>
+  $(document).foundation();
+</script>
+
+</body>
 </html>
