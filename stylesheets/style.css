@@ -48,7 +48,10 @@ li.toggle-topbar{
 }
 
 .top-bar ul li.toggle-topbar {
-    height: 40px;
+    background-color: transparent;
+}
+.top-bar ul li.toggle-topbar:hover {
+    background-color: transparent;
 }
 
 .header .name a:hover {
