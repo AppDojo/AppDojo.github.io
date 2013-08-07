@@ -25,7 +25,24 @@
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
   <script src="javascripts/modernizr.foundation.js"></script>
+	
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>
+  		function initialize() 
+  		{
+			var map_canvas = document.getElementById('mapModal');
+			var mapOptions = {
+      		center: new google.maps.LatLng(25.7706, -80.367783),
+      		zoom: 15,
+      		mapTypeId: google.maps.MapTypeId.ROADMAP
+    	}
+   
+   			 var map = new google.maps.Map(map_canvas, mapOptions);
+		}
+	
+	google.maps.event.addDomListener(window, 'load', initialize);
 
+</script>
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -123,18 +140,22 @@
     <!-- Sidebar -->
 
     <div class="three columns">
-
+		
+        
+        
+        
       <h5>Map</h5>
-
+      <div id ="mapModal">
+		</div>
       <!-- Clicking this placeholder fires the mapModal Reveal modal -->
-      <p>
+     <!-- <p>
         <a href="" data-reveal-id="mapModal"><img src="http://placehold.it/400x280" /></a><br />
         <a href="" data-reveal-id="mapModal">View Map</a>
-      </p>
+      </p> -->
 
-      <p>
-        123 Awesome St.<br />
-        Barsoom, MA 95155
+      <p><br />
+        10555 West Flagler Street<br />
+        Miami, Florida 33174
       </p>
 
     </div>
