@@ -30,14 +30,14 @@
     <script>
   		function initialize() 
   		{
-			var map_canvas = document.getElementById('mapModal');
+			var mapCanvas = document.getElementById("map_canvas");
 			var mapOptions = {
       		center: new google.maps.LatLng(25.7706, -80.367783),
       		zoom: 15,
       		mapTypeId: google.maps.MapTypeId.ROADMAP
     	}
    
-   			 var map = new google.maps.Map(map_canvas, mapOptions);
+   			 var map = new google.maps.Map(mapCanvas, mapOptions);
 		}
 	
 	google.maps.event.addDomListener(window, 'load', initialize);
@@ -145,7 +145,8 @@
         
         
       <h5>Map</h5>
-      <div id ="mapModal">
+      <div class ="map" id="map_canvas">
+      	
 		</div>
       <!-- Clicking this placeholder fires the mapModal Reveal modal -->
      <!-- <p>

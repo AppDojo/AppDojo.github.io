@@ -207,7 +207,8 @@ footer, footer p{
 	padding: 3px;
 	font-size: 12px;}
 	
-#mapModal	{
-        width: 400px;
-        height: 280px;
+.map	{
+	width: 400px;
+	height: 280px;
       }
+#map_canvas{}
