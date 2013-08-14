@@ -205,5 +205,10 @@ footer .signature, footer .signature a{
 footer, footer p{
 	background: black;
 	padding: 3px;
-	font-size: 12px;
-}
+	font-size: 12px;}
+	
+.map	{
+	width: 400px;
+	height: 280px;
+      }
+#map_canvas{}
