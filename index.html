@@ -7,10 +7,15 @@
   
     <title>Welcome to App Dojo | Homepage</title>
   
+
+	<link rel="stylesheet" href="stylesheets/dock2.css" />
+
+  
   
     <link rel="stylesheet" href="stylesheets/normalize.css">
     <link rel="stylesheet" href="stylesheets/foundation.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/dock.css">
     <!--<link rel="stylesheet" href="stylesheets/animate-custom.css">-->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
@@ -20,13 +25,17 @@
   
     <script src="javascripts/vendor/jquery.js"></script>
     <script src="javascripts/vendor/custom.modernizr.js"></script>
+	
    
-  	</script>
+  	
   
     <!-- IE Fix for HTML5 Tags -->
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+	
+	
+
   </head>
   <body>
     <nav class="top-bar header">
@@ -49,8 +58,9 @@
             <a href="#">Resources</a>
             <ul class="dropdown">
               <li><a href="#">Mobile Development</a></li>
-              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Web Development</a></li>			 
               <li><a href="#">Tools And Applications</a></li>
+			  <li><a href="webchat.html">Web Chat</a></li>
             </ul>
           </li>
           <li class="divider"></li>
@@ -107,24 +117,58 @@
       </div>
     </section>
   
-  
+<!-- Begin team section -->  
     <section id="team">
-      <div class="row">
-        <div class="twelve columns">
-          <h4>Meet the Team</h4>
-          <div id="contactPeopleTab">
-            <ul class="block-grid four-up">
-              <li><a href="#"><img src="images/ninja.png" /><br />Leo Correa</a></li>
-              <li><a href="#"><img src="images/ninja.png" /><br />Joshua Martinez</a></li>
-              <li><a href="#"><img src="images/ninja.png" /><br />Gregory Jean-Baptiste</a></li>
-              <li><a href="#"><img src="images/ninja.png" /><br />Eduardo Dennis</a></li>
-              <li><a href="#"><img src="images/ninja.png" /><br />Enok Madrid</a></li>
-              <li><a href="#"><img src="images/ninja.png" /><br />Luis Camacho</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    
+   
+			<div class="row" >
+			<h4>Meet the Team</h4>
+			<div class="twelve columns">
+			
+			<div class="dock">				
+				<ul>
+					<li id="mail">
+						<a href="#mail">
+							<em><span>Leo Correa</span></em>
+							<img src="images/ninja.png" alt="Mail" />
+						</a>
+					</li>
+					<li id="ical">
+						<a href="#ical">
+							<em><span>Joshua Martinez</span></em>
+							<img src="images/ninja.png" alt="iCal" />
+						</a>
+					</li>
+					<li id="addressbook">
+						<a href="#addressbook">
+							<em><span>Gregory Jean-Baptiste</span></em>
+							<img src="images/ninja.png" alt="Address Book" />
+						</a>
+					</li>
+					<li id="iphoto">
+						<a href="#iphoto">
+							<em><span>Eduardo Dennis</span></em>
+							<img src="images/ninja.png" alt="iPhoto" />
+						</a>
+					</li>
+					<li id="idisk">
+						<a href="#idisk">
+							<em><span>Enok Madrid</span></em>
+							<img src="images/ninja.png" alt="iDisk" />
+						</a>
+					</li>
+					<li id="icar">
+						<a href="#icar">
+							<em><span>Luis Camacho</span></em>
+							<img src="images/ninja.png" alt="icar" />
+						</a>
+					</li>
+				</ul>
+			
+			<!-- End: CSS Dock Code -->
+		</div>
+			</div>
+	
+	</div>
       <div class="row get-in-touch">
         <div class="twelve columns">  
           <div class="panel">
@@ -160,7 +204,7 @@
             <li><a href="#">Web Development</a></li>
             <li><a href="#">App Development</a></li>
             <li><a href="#">Tools and Applications</a></li>
-            <li><a href="#">Downloads</a></li>
+            <li><a href="#">Downloads</a></li>	
           </ul>
         </div>
         <div class="three columns">
