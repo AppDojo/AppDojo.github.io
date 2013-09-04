@@ -107,11 +107,14 @@ ul.right>li:hover {
 	margin-top: 100px;
 }
 .dojo-msg h5{
-	
+	color: white;
+	font-size: ;
+    font-family: 'Jura', sans-serif;
+    -webkit-transition: opacity 2s linear;
 }
 #dojo-msg {
 	color: white;
-	font-size: 3.8em;
+	font-size:2.0em;
     font-family: 'Jura', sans-serif;
     -webkit-transition: opacity 2s linear;
 }
@@ -165,7 +168,20 @@ ul.right>li:hover {
 	font-size: 1.3em;
 }
 
+.movein {
+opacity: 0.0;
+ -webkit-transform: scale(0.95) translate3d(0,100%,0);
+  -webkit-transition: -webkit-transform 400ms ease, opacity 400ms ease;
+}
+.movein.active {
+  opacity: 1.0;
+  -webkit-transform: scale(1.0) translate3d(0,0,0);
+}
 
+.movein.inactive {
+  opacity: 1.0;
+  -webkit-transform: scale(1) translate3d(0,0,0);
+}
 
 
 /*************************************/

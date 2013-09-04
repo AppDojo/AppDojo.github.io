@@ -64,11 +64,11 @@
   
     <section id="billboard">
       <div class="row">
-        <div class="six columns dojo">
-          <h2><img src="images/dojo_big.png" alt="dojo_big" width="367" height="343" /></h2>
+        <div class="six columns dojo movein">
+          <img src="images/dojo_big.png" alt="dojo_big"  width="367" height="343" />
         </div>
         <div id="dojo-msg" class="six columns dojo-msg hidden">
-          <h5>A place to bring ideas to life!</h5>
+          <h5 id="dojo-msg" class="dojo-msg" >A place to bring ideas to life!</h5>
         </div>
       </div>
     </section>
@@ -231,6 +231,16 @@
   
     <script>
       $(document).foundation();
+      var active = function(){
+    $('.movein').removeClass('inactive').addClass('active');
+    };
+
+    var inactive = function(){
+      $('.movein').removeClass('active').addClass('inactive');
+    };
+
+setTimeout(active, 500);
+setTimeout(inactive, 1000);
     </script>
     
     <script>
