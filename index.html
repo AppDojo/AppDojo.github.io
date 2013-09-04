@@ -7,7 +7,7 @@
   
     <title>Welcome to App Dojo | Homepage</title>
   
-  
+  <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="stylesheets/normalize.css">
     <link rel="stylesheet" href="stylesheets/foundation.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
@@ -67,7 +67,7 @@
         <div class="six columns dojo">
           <h2><img src="images/dojo_big.png" alt="dojo_big" width="367" height="343" /></h2>
         </div>
-        <div class="six columns dojo-msg">
+        <div id="dojo-msg" class="six columns dojo-msg hidden">
           <h5>A place to bring ideas to life!</h5>
         </div>
       </div>
@@ -82,51 +82,80 @@
         </div>
       </div>
     </section>
-  
+
   
     <!-- Three-up Content Blocks -->
     <section id="main">
       <div class="row">
-        <div class="four columns">
-          <p><img src="images/temple.png" alt="temple" width="100" height="100" /></p>
-          <h4>Who are we?</h4>
-          <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa.</p>
-        </div>
+
         
         <div class="four columns">
-          <p><img src="images/star.png" alt="star" width="100" height="100" /></p>
-          <h4>Learn.</h4>
-          <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa.</p>
+          <center><p><img src="images/temple.png" alt="temple" width="100" height="100" /></p>
+          <h4>Who are we?</h4></center>
+          <p>We are a group of enthusiasts that like building apps (think hackerspace). The community was founded by Steve Luis and Carlos Ordonez in Aug. 2012. This is not a class and the teams are self directed. Some are participating for fun and others have commercialization interests. We help individuals find and build teams for building apps. We also provide technical and business mentoring.</p>
         </div>
+ 
         
         <div class="four columns">
-          <p><img src="images/cont.png" alt="cont" width="100" height="100" /></p>
-          <h4>Contribute.</h4>
-          <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa.</p>
+          <center><p><img src="images/cont.png" alt="cont" width="100" height="100" /></p>
+          <h4>Contribute.</h4></center>
+          <p>We encourage developers and non-developers to participate on the teams. We have general meetings where we have talks on subjects like "Submitting your Apps to the App Store" or "How to get started with Ruby/RoR". Most of our meetings are dedicated to team development and app building.</p>
+        </div>
+        <div class="four columns">
+          <center><p><img src="images/star.png" alt="star" width="100" height="100" /></p>
+          <h4>Learn.</h4></center>
+          <ul class="circle">
+            <li>Web Development</li>
+            <li>Co-Working</li>
+            <li>Mobile Development</li> 
+            <li>Prototyping</li>
+            <li>Hardware Hacking</li> 
+
+          </ul>
         </div>
       </div>
     </section>
-  
-  
-    <section id="team">
-      <div class="row">
+
+<section id="plax" data-speed="6" data-type="background">
+      <div class="container">
+        <div class="row" >
+          <div class="twelve columns">
+            <center><h1>Meet the Team!</h1><center>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" id="team">
+      <div class="row" >
         <div class="twelve columns">
-          <h4>Meet the Team</h4>
+   
           <div id="contactPeopleTab">
             <ul class="block-grid four-up">
-              <li><a href="#"><img src="images/ninja.png" /><br />Leo Correa</a></li>
-              <li><a href="#"><img src="images/ninja.png" /><br />Joshua Martinez</a></li>
-              <li><a href="#"><img src="images/ninja.png" /><br />Gregory Jean-Baptiste</a></li>
-              <li><a href="#"><img src="images/ninja.png" /><br />Eduardo Dennis</a></li>
-              <li><a href="#"><img src="images/ninja.png" /><br />Enok Madrid</a></li>
-              <li><a href="#"><img src="images/ninja.png" /><br />Luis Camacho</a></li>
-              <li><a href="#"><img src="images/ninja.png" /><br />Damaris Gonzalez</a></li>
+              <li><a href="#"><img src="images/dojo_sm.png" /><br />Leo Correa</a></li>
+              <li><a href="#"><img src="images/dojo_sm.png" /><br />Joshua Martinez</a></li>
+              <li><a href="#"><img src="images/dojo_sm.png" /><br />Gregory Jean-Baptiste</a></li>
+              <li><a href="#"><img src="images/dojo_sm.png" /><br />Eduardo Dennis</a></li>
+              <li><a href="#"><img src="images/dojo_sm.png" /><br />Enok Madrid</a></li>
+              <li><a href="#"><img src="images/dojo_sm.png" /><br />Luis Camacho</a></li>
+              <li><a href="#"><img src="images/dojo_sm.png" /><br />Damaris Gonzalez</a></li>
+              <li><a href="#"><img src="images/dojo_sm.png" /><br />John Paul Funk</a></li>
+              <li><a href="#"><img src="images/dojo_sm.png" /><br />Qing Gao</a></li>
+              <li><a href="#"><img src="images/dojo_sm.png" /><br />Ebby Wahman</a></li>
+              
             </ul>
           </div>
         </div>
       </div>
     
-      <div class="row get-in-touch">
+
+    </div>
+
+
+    </section>
+
+  <section>
+    <div class="container" >
+          <div class="row get-in-touch">
         <div class="twelve columns">  
           <div class="panel">
             <h4>Get in touch!</h4>
@@ -141,7 +170,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+
   
     <!-- Footer -->
     <section id="footer">

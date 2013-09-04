@@ -107,10 +107,15 @@ ul.right>li:hover {
 	margin-top: 100px;
 }
 .dojo-msg h5{
+	
+}
+#dojo-msg {
 	color: white;
 	font-size: 3.8em;
     font-family: 'Jura', sans-serif;
+    -webkit-transition: opacity 2s linear;
 }
+.hidden h5{ opacity: 0;}
 
 
 
@@ -122,6 +127,7 @@ ul.right>li:hover {
 #message{
 	width: 100%;
 	background: #9ea0bf;
+	  
 }
 #message h3{
 	color: #5d5e9b;
@@ -129,6 +135,7 @@ ul.right>li:hover {
 	text-shadow: 0px 2px 2px #c0badf;
 	padding: 23px 0;
 }
+
 
 
 /*************************************/
@@ -164,8 +171,16 @@ ul.right>li:hover {
 /*************************************/
 /**************** TEAM ***************/
 #team{
-	background: #eee;
+	background: rgba(255, 255, 255, 0.69);
 	padding: 50px 0;
+
+}
+#team img {
+	width:40%;
+}
+#team img:hover {
+	width:50%;
+
 }
 .get-in-touch{
 	padding-top: 50px;
@@ -175,8 +190,22 @@ ul.right>li:hover {
 #team ul li {
     text-align:center;
 }
+#plax {
+    background: url('../images/peopleatmeeting.jpg') center bottom fixed;
+    background-size: cover;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 100px 0;
+}
+#plax h1 {
+font-family: 'Amatic SC', cursive;
+font-size: 75px;
+color:white;
 
-
+}
 /*************************************/
 /************** FOOTER **************/
 #footer{
@@ -208,7 +237,8 @@ footer, footer p{
 	font-size: 12px;}
 	
 .map	{
-	width: 400px;
+	width: 100%;
 	height: 280px;
+    	
       }
 #map_canvas{}
