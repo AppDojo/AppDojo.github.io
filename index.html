@@ -62,15 +62,17 @@
     </nav>
   <!-- End Header and Nav -->
   
-    <section id="billboard">
+    <section id="billboard" data-speed="6"  data-type="background" >
+      <div class="container"> 
       <div class="row">
         <div class="six columns dojo movein">
           <img src="images/dojo_big.png" alt="dojo_big"  width="367" height="343" />
         </div>
         <div id="dojo-msg" class="six columns dojo-msg hidden">
-          <h5 id="dojo-msg" class="dojo-msg" >A place to bring ideas to life!</h5>
+          <h5 id="dojo-msg"  >A place to bring ideas to life!</h5>
         </div>
       </div>
+    </div>
     </section>
   
   
@@ -238,9 +240,17 @@
     var inactive = function(){
       $('.movein').removeClass('active').addClass('inactive');
     };
+         var active2 = function(){
+    $('#dojo-msg').removeClass('inactive').addClass('active');
+    };
 
-setTimeout(active, 500);
-setTimeout(inactive, 1000);
+    var inactive2 = function(){
+      $('#dojo-msg').removeClass('active').addClass('inactive');
+    };
+setTimeout(active2, 800);
+setTimeout(inactive2, 1200);
+setTimeout(active, 100);
+setTimeout(inactive, 11000);
     </script>
     
     <script>

@@ -87,14 +87,17 @@ ul.right>li:hover {
 /*************************************/
 /************ BILLBOARD **************/
 #billboard{
-	height: 100%;
-	width: 100%;
+	
 	background: #150a28;
-	background-image: url("../images/bg.jpg");
-	background-position: top center;
-	background-repeat: no-repeat;
-	padding-top: 10px;
-	padding-bottom: 30px;
+	background: url("../images/bg.jpg") center fixed;
+	background-size: cover;
+  	padding-bottom: 80px;
+  	padding-top:20px;
+    margin: 0 auto;
+	width: 100%;
+    height: 100%;
+    position: relative;
+   
 }
 .dojo{
 	padding: 0;
@@ -106,21 +109,27 @@ ul.right>li:hover {
 .dojo-msg{
 	margin-top: 100px;
 }
-.dojo-msg h5{
-	color: white;
-	font-size: ;
-    font-family: 'Jura', sans-serif;
-    -webkit-transition: opacity 2s linear;
-}
+
 #dojo-msg {
 	color: white;
 	font-size:2.0em;
     font-family: 'Jura', sans-serif;
-    -webkit-transition: opacity 2s linear;
+    -webkit-transition: opacity 1000s linear;
+
+ -webkit-transform: scale(-0.75) translate3d(0,100%,0);
+ -webkit-transition: -webkit-transform 400ms ease, opacity 400ms ease;
 }
 .hidden h5{ opacity: 0;}
 
+#dojo-msg.active {
+  opacity: 1.0;
+  -webkit-transform: scale(-1.55) translate3d(0,0,0);
+}
 
+#dojo-msg.inactive {
+  opacity: 1.0;
+  -webkit-transform: scale(-1.35) translate3d(0,0,0);
+}
 
 
 
@@ -169,9 +178,10 @@ ul.right>li:hover {
 }
 
 .movein {
-opacity: 0.0;
+	opacity: 0.0;
  -webkit-transform: scale(0.95) translate3d(0,100%,0);
-  -webkit-transition: -webkit-transform 400ms ease, opacity 400ms ease;
+ -webkit-transition: -webkit-transform 400ms ease, opacity 400ms ease;
+
 }
 .movein.active {
   opacity: 1.0;
